@@ -1,6 +1,7 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 
+#include <signal.h>
 #include "faceDetect.h"
 #include "getUrlPic.h"
 #include "redis_tool.hpp"
@@ -23,5 +24,9 @@
 
 #define REDIS_SERVER_IP     "127.0.0.1"
 #define REDIS_SERVER_PORT   6379
+
+using namespace std;
+
+volatile sig_atomic_t g_running = 1;
 
 #endif

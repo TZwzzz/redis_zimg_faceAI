@@ -5,11 +5,13 @@ float confidenceThreshold;
 
 int faceDetect_init(double Threshold)
 {
-    String model_bin = "../ch12_face_age/opencv_face_detector_uint8.pb";
-    String config_text = "../ch12_face_age/opencv_face_detector.pbtxt";
+    get_faceDetectLogs()->info("faceDetect() inParm:Threshold:{}", Threshold);
+    String model_bin = "./ch12_face_age/opencv_face_detector_uint8.pb";
+    String config_text = "./ch12_face_age/opencv_face_detector.pbtxt";
     faceNet = readNet(model_bin,config_text);
     if(faceNet.empty())
     {
+        get_faceDetectLogs()->error("faceDetect_init() faceNet is empty,make sure you enter the correct model file");
         cout << "Make sure you enter the correct model file" << endl;
         return -1;
     }
@@ -20,6 +22,7 @@ int faceDetect_init(double Threshold)
 
 vector<ret_rect> faceDetect(String picName)
 {
+    get_faceDetectLogs()->info("faceDetect() inParm:picName:{}", picName);
     vector<ret_rect> vec_ret_rect;
     Mat img = imread(picName);
     ret_rect retRect;
@@ -29,6 +32,7 @@ vector<ret_rect> faceDetect(String picName)
 
     if(img.empty())
     {
+        get_faceDetectLogs()->error("faceDetect() img is empty,make sure you enter the correct picName file");
         cout << "Make sure you enter the correct picName file" << endl;
         return vec_ret_rect;
     }

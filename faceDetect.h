@@ -3,9 +3,7 @@
 
 #include <opencv2/opencv.hpp>
 #include <opencv2/dnn.hpp>
-#include "spdlog/spdlog.h"
-#include "spdlog/async.h"
-#include "spdlog/sinks/rotating_file_sink.h"
+#include "logs.h"
 
 using namespace cv;
 using namespace cv::dnn;

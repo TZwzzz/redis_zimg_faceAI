@@ -1,11 +1,16 @@
 #include "main.h"
 
-using namespace std;
+// 信号处理函数
+void stopRunning(int signum)
+{
+    g_running = 0;
+}
 
 int main(int argc, const char *argv[])
 {
     logs_init();                                                    // 初始化log
     faceDetect_init(0.5);                                           // 人脸检测模型导入
+    signal(SIGINT, stopRunning);                                    // 注册信号处理函数
     string delivered_id;                                            // 消息id
     map<string, string> picfield_string_map, replyfield_string_map; // 存储消息字段
     int ret = 0;
@@ -17,7 +22,7 @@ int main(int argc, const char *argv[])
     tempPicName += ".jpg";
     string readFlag = "0"; // 读取消息方式 0:已经读取但未处理的消息 >:未读取的消息
 
-    while (1)
+    while (g_running)
     {
         // 读取未处理的消息
         ret = redisTool.XgroupRead(IOT_TO_PIC_STREAM, IOT_TO_PIC_GROUP, IOT_TO_PIC_CONSUMER, delivered_id, picfield_string_map, 1, readFlag);
@@ -43,5 +48,6 @@ int main(int argc, const char *argv[])
         }
     }
 
-    redisTool.Close();
+    system("rm *.jpg"); // 清除所有临时缓存图片
+    redisTool.Close();  // 断开redis连接
 }

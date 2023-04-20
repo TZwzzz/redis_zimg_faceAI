@@ -13,5 +13,6 @@ int logs_init();
 std::shared_ptr<spdlog::logger> get_jsonLogs();
 std::shared_ptr<spdlog::logger> get_getUrlPicLogs();
 std::shared_ptr<spdlog::logger> get_redis_toolLogs();
+std::shared_ptr<spdlog::logger> get_faceDetectLogs();
 
 #endif

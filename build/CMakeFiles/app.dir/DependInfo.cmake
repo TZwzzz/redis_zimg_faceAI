@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/wilson/redis_zimg_faceAI/faceDetect.cpp" "/home/ubuntu/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/faceDetect.cpp.o"
-  "/home/ubuntu/wilson/redis_zimg_faceAI/getUrlPic.cpp" "/home/ubuntu/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/getUrlPic.cpp.o"
-  "/home/ubuntu/wilson/redis_zimg_faceAI/json.cpp" "/home/ubuntu/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/json.cpp.o"
-  "/home/ubuntu/wilson/redis_zimg_faceAI/logs.cpp" "/home/ubuntu/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/logs.cpp.o"
-  "/home/ubuntu/wilson/redis_zimg_faceAI/main.cpp" "/home/ubuntu/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/main.cpp.o"
-  "/home/ubuntu/wilson/redis_zimg_faceAI/redis_tool.cpp" "/home/ubuntu/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/redis_tool.cpp.o"
+  "/home/wilson/redis_zimg_faceAI/faceDetect.cpp" "/home/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/faceDetect.cpp.o"
+  "/home/wilson/redis_zimg_faceAI/getUrlPic.cpp" "/home/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/getUrlPic.cpp.o"
+  "/home/wilson/redis_zimg_faceAI/json.cpp" "/home/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/json.cpp.o"
+  "/home/wilson/redis_zimg_faceAI/logs.cpp" "/home/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/logs.cpp.o"
+  "/home/wilson/redis_zimg_faceAI/main.cpp" "/home/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/main.cpp.o"
+  "/home/wilson/redis_zimg_faceAI/redis_tool.cpp" "/home/wilson/redis_zimg_faceAI/build/CMakeFiles/app.dir/redis_tool.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/wilson/OpenCV/opencv-3.4.12/install/include"
+  "/home/wilson/OpenCV/opencv-3.4.12/install/include/opencv"
   "/usr/local/include/hiredis"
-  "/home/ubuntu/spdlog/include"
-  "/home/ubuntu/opencv-3.4.12/install/include"
-  "/home/ubuntu/opencv-3.4.12/install/include/opencv"
+  "/home/wilson/spdlog/include"
   )
 
 # Targets to which this target links.
