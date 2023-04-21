@@ -5,10 +5,10 @@
 #define THREAD_CNT 1                                      // 线程个数
 #define LOG_FORMAT "[%Y-%m-%d %H:%M:%S.%e][%n][%t][%l]%v" // 日志格式
 
-#define JSON_LOGS_NAME "jsonLogs"                      // 日志记录器名称
+#define JSON_LOGS_NAME "jsonLogs"                     // 日志记录器名称
 #define JSON_LOGS_PATH "./anyteck_logs/jsonLogs/logs" // 日志存储路径
-#define JSON_LOGS_SIZE (1024 * 1024 * 5)               // 单个日志文件容量上限
-#define JSON_LOGS_CNT 100                              // 日志文件最大个数
+#define JSON_LOGS_SIZE (1024 * 1024 * 5)              // 单个日志文件容量上限
+#define JSON_LOGS_CNT 100                             // 日志文件最大个数
 
 #define GETURLPIC_LOGS_NAME "getUrlPiclogs"
 #define GETURLPIC_LOGS_PATH "./anyteck_logs/getUrlPicLogs/logs"

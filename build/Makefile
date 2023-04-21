@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named app
+# Target rules for targets named redis_zimg_faceAI
 
 # Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 app
-.PHONY : app
+redis_zimg_faceAI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 redis_zimg_faceAI
+.PHONY : redis_zimg_faceAI
 
 # fast build rule for target.
-app/fast:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-.PHONY : app/fast
+redis_zimg_faceAI/fast:
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/build
+.PHONY : redis_zimg_faceAI/fast
 
 faceDetect.o: faceDetect.cpp.o
 
@@ -129,7 +129,7 @@ faceDetect.o: faceDetect.cpp.o
 
 # target to build an object file
 faceDetect.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/faceDetect.cpp.o
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/faceDetect.cpp.o
 .PHONY : faceDetect.cpp.o
 
 faceDetect.i: faceDetect.cpp.i
@@ -138,7 +138,7 @@ faceDetect.i: faceDetect.cpp.i
 
 # target to preprocess a source file
 faceDetect.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/faceDetect.cpp.i
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/faceDetect.cpp.i
 .PHONY : faceDetect.cpp.i
 
 faceDetect.s: faceDetect.cpp.s
@@ -147,7 +147,7 @@ faceDetect.s: faceDetect.cpp.s
 
 # target to generate assembly for a file
 faceDetect.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/faceDetect.cpp.s
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/faceDetect.cpp.s
 .PHONY : faceDetect.cpp.s
 
 getUrlPic.o: getUrlPic.cpp.o
@@ -156,7 +156,7 @@ getUrlPic.o: getUrlPic.cpp.o
 
 # target to build an object file
 getUrlPic.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/getUrlPic.cpp.o
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/getUrlPic.cpp.o
 .PHONY : getUrlPic.cpp.o
 
 getUrlPic.i: getUrlPic.cpp.i
@@ -165,7 +165,7 @@ getUrlPic.i: getUrlPic.cpp.i
 
 # target to preprocess a source file
 getUrlPic.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/getUrlPic.cpp.i
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/getUrlPic.cpp.i
 .PHONY : getUrlPic.cpp.i
 
 getUrlPic.s: getUrlPic.cpp.s
@@ -174,7 +174,7 @@ getUrlPic.s: getUrlPic.cpp.s
 
 # target to generate assembly for a file
 getUrlPic.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/getUrlPic.cpp.s
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/getUrlPic.cpp.s
 .PHONY : getUrlPic.cpp.s
 
 json.o: json.cpp.o
@@ -183,7 +183,7 @@ json.o: json.cpp.o
 
 # target to build an object file
 json.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/json.cpp.o
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/json.cpp.o
 .PHONY : json.cpp.o
 
 json.i: json.cpp.i
@@ -192,7 +192,7 @@ json.i: json.cpp.i
 
 # target to preprocess a source file
 json.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/json.cpp.i
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/json.cpp.i
 .PHONY : json.cpp.i
 
 json.s: json.cpp.s
@@ -201,7 +201,7 @@ json.s: json.cpp.s
 
 # target to generate assembly for a file
 json.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/json.cpp.s
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/json.cpp.s
 .PHONY : json.cpp.s
 
 logs.o: logs.cpp.o
@@ -210,7 +210,7 @@ logs.o: logs.cpp.o
 
 # target to build an object file
 logs.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/logs.cpp.o
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/logs.cpp.o
 .PHONY : logs.cpp.o
 
 logs.i: logs.cpp.i
@@ -219,7 +219,7 @@ logs.i: logs.cpp.i
 
 # target to preprocess a source file
 logs.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/logs.cpp.i
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/logs.cpp.i
 .PHONY : logs.cpp.i
 
 logs.s: logs.cpp.s
@@ -228,7 +228,7 @@ logs.s: logs.cpp.s
 
 # target to generate assembly for a file
 logs.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/logs.cpp.s
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/logs.cpp.s
 .PHONY : logs.cpp.s
 
 main.o: main.cpp.o
@@ -237,7 +237,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -246,7 +246,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -255,7 +255,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 redis_tool.o: redis_tool.cpp.o
@@ -264,7 +264,7 @@ redis_tool.o: redis_tool.cpp.o
 
 # target to build an object file
 redis_tool.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/redis_tool.cpp.o
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/redis_tool.cpp.o
 .PHONY : redis_tool.cpp.o
 
 redis_tool.i: redis_tool.cpp.i
@@ -273,7 +273,7 @@ redis_tool.i: redis_tool.cpp.i
 
 # target to preprocess a source file
 redis_tool.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/redis_tool.cpp.i
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/redis_tool.cpp.i
 .PHONY : redis_tool.cpp.i
 
 redis_tool.s: redis_tool.cpp.s
@@ -282,7 +282,7 @@ redis_tool.s: redis_tool.cpp.s
 
 # target to generate assembly for a file
 redis_tool.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/redis_tool.cpp.s
+	$(MAKE) -f CMakeFiles/redis_zimg_faceAI.dir/build.make CMakeFiles/redis_zimg_faceAI.dir/redis_tool.cpp.s
 .PHONY : redis_tool.cpp.s
 
 # Help Target
@@ -292,7 +292,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... app"
+	@echo "... redis_zimg_faceAI"
 	@echo "... edit_cache"
 	@echo "... faceDetect.o"
 	@echo "... faceDetect.i"

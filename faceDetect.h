@@ -21,16 +21,15 @@ struct ret_rect
 /** @brief Configure the input picture information
  *  @param Threshold:Confidence in face detection
  *  @returns 0:successfully -1:failed
- *  @note  None 
+ *  @note  None
  */
 int faceDetect_init(double Threshold);
 
 /** @brief face detection func
  *  @param picName The name of input picture
  *  @returns vector of face rectangle
- *  @note  None 
+ *  @note  None
  */
 vector<ret_rect> faceDetect(String picName);
-
 
 #endif

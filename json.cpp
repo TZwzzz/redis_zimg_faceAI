@@ -2,12 +2,12 @@
 
 using json = nlohmann::json;
 
-
-std::string ret_rect_to_json(const std::vector<ret_rect>& rects) 
+std::string ret_rect_to_json(const std::vector<ret_rect> &rects)
 {
     json j;
     j["size"] = rects.size();
-    for (const auto& ret_rect : rects) {
+    for (const auto &ret_rect : rects)
+    {
         json r;
         r["topLx"] = ret_rect.topLx;
         r["topLy"] = ret_rect.topLy;
@@ -20,4 +20,3 @@ std::string ret_rect_to_json(const std::vector<ret_rect>& rects)
     get_jsonLogs()->info("ret_rect_to_json() return: {}", json_str);
     return json_str;
 }
-
